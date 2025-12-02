@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+</head>
+<style>
+    body,html{
+        background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    }
+   h1{
+        text-align: center;
+        color: rgb(212, 27, 51);
+        
+    }
+    .container{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 40px;
+        
+         
+
+
+    }
+    img{
+        height: 150px;
+        width: 150px;
+         border-radius: 20px;
+    }
+    .container>div{
+        display: flex;
+        border: 1px solid rgb(212, 27, 51);
+        box-shadow: rgba(212, 40, 40, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 20px;
+        cursor: pointer;
+     
+    }
+    .container>div>div{
+       margin-left:  20px;
+    }
+    button{
+        background-color: transparent;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        padding: 10px;
+       border-radius: 10px;
+       cursor:wait;
+    }
+h2,p{
+    color:rgb(98, 22, 3);
+}
+@media only screen and (min-width:421px) and (max-width:800px)
+{
+    img{
+       border-radius: 50%;
+    }
+    .container>div{
+        flex-direction: column;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .container{
+         grid-template-rows: auto;
+    }
+    h2,p{
+        color: brown;
+       font-style: oblique;
+    }
+   
+}
+@media only screen and (min-width:100px) and (max-width:421px)
+{
+    img{
+       border-radius: 50%;
+    }
+    .container>div{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .container{
+         grid-template-columns: repeat(1,1fr);
+    }
+    h2,p{
+        color: rgb(127, 16, 197);
+       font-style: inherit;
+    }
+    button{
+        background-color: rgb(241, 12, 12);
+        border-radius: 20px;
+    }
+}
+
+
+</style>
+
+<body>
+ <h1>   Movies Corner</h1>
+    <div class="container">
+      
+        <div>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.WuqYmLOAZqUedJ5KlNQ_yAHaLH&w=200&h=300&c=7" alt="">
+            <div>
+                <h2>Chhaava</h2>
+                <p>Releasing date 15 jan 2025</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.sScQUlVUtXhRq-5urTMYFwHaLH&w=200&h=300&c=7" alt="">
+            <div>
+                <h2>  Raid 2</h2>
+                 <p>Releasing date 15 jan 2025</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+        <div>
+            
+            <img src="https://tse2.mm.bing.net/th?id=OIP.6p4yd5R1ORs4NV_a9f5FhQHaLH&w=200&h=300&c=7" alt="">
+            <div>
+                <h2>Sky Force</h2>
+                 <p>Releasing date 15 jan 2025</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+        <div>
+         
+            <img src="https://tse4.mm.bing.net/th?id=OIP.N0U-y1GoidwOWOIc89IhYAHaJQ&w=200&h=250&c=7" alt="">
+            <div>
+                <h2>The Diplomat</h2>
+                <p>Releasing date 15 jan 2025</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+        <div>
+            
+            <img src="https://m.media-amazon.com/images/M/MV5BYjRiOWZiZWYtMzRkZS00ZjY2LWI2ZGItMzgxZWVmYjQ3ZDk2XkEyXkFqcGc@._V1_QL75_UX217.5_.jpg" alt="">
+            <div>
+            <h2>Kesari Veer</h2>
+             <p>Releasing date 15 jan 2025</p>
+            <button>Book Ticket</button>
+            </div>
+        </div>
+        <div>
+          
+            <img src="https://filmfare.wwmindia.com/content/2025/jan/gamechanger31736442874.jpg" alt="">
+            <div>
+                  <h2>Game Changer</h2>
+                 <p>releasing date 15 jan 2025</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
